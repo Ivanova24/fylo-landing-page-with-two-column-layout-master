@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --color-footer: hsl(243, 87%, 12%);
+  --color-access: hsl(238, 22%, 44%);
+  --color-btn: hsl(224, 93%, 58%);
+  --color-FyloWorks: hsl(170, 45%, 43%);
+  --color-primary: hsl(240, 75%, 98%);
+  --color-bg: hsl(0, 0%, 75%);
+  --font-body: "Open Sans", sans-serif;
+  --font-headings: "Raleway", sans-serif;
+  --contentWidth: 1224px;
+}
+
+html {
+  font-family: var(--font-body);
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--color-footer);
+}
+
+a {
+  color: var(--link-color);
+  transition: all 0.5s ease-out;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6;
+}
+
+
