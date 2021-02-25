@@ -10,7 +10,6 @@
   --color-bg: hsl(0, 0%, 75%);
   --font-body: "Open Sans", sans-serif;
   --font-headings: "Raleway", sans-serif;
-  --contentWidth: 1224px;
 }
 
 html {
@@ -81,4 +80,76 @@ p {
   line-height: 1.6;
 }
 
+/* ***site styles*** */
+.container {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 8.5rem;
+    padding: 2.4rem clamp(2rem, 6vw, 90rem);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 30%;
+}
+
+.header-links {
+  font-family: var(--font-headings);
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.header-links a {
+  margin-left: 0.5rem;
+  text-decoration: none;
+  font-size: 1.16rem;
+} 
+
+.description {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.description h1 {
+  font-family: var(--font-headings);
+  font-size: 1.7rem;
+  line-height: 1.6;
+}
+
+.description p {
+  margin: 2rem 0;
+  font-size: 1.16rem;
+}
+
+.testimony-description {
+  text-align: initial;
+}
+
+.form {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.wrap {
+  color: var(--color-primary);
+  display: grid;
+  grid-auto-flow: row;
+  padding: 2.4rem clamp(2rem, 6vw, 90rem);
+}
+
+.access {
+  background-color: var(--color-access);
+}
+
+.footer {
+  background-color: var(--color-footer);
+  row-gap: 3rem;
+}
 
