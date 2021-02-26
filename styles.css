@@ -80,12 +80,36 @@ p {
   line-height: 1.6;
 }
 
+/* ***utilities*** */
+.form {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.submit {
+  padding: 1rem;
+  font-size: 1.16rem;
+  border-radius: 7px;
+}
+
+.btn {
+  color: var(--color-primary);
+  background-color: var(--color-btn);
+  border-color: var(--color-btn);
+  font-family: 'Raleway';
+  font-weight: 700;
+  box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 25%);
+}
+
 /* ***site styles*** */
 .container {
-    display: grid;
-    grid-auto-flow: row;
     row-gap: 8.5rem;
-    padding: 2.4rem clamp(2rem, 6vw, 90rem);
+}
+
+.wrap {
+  display: grid;
+  grid-auto-flow: row;
+  padding: 2.4rem clamp(2rem, 6vw, 90rem);
 }
 
 .header {
@@ -118,8 +142,7 @@ p {
 }
 
 .description h1 {
-  font-family: var(--font-headings);
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   line-height: 1.6;
 }
 
@@ -128,28 +151,62 @@ p {
   font-size: 1.16rem;
 }
 
+.headings {
+  font-family: var(--font-headings);
+}
+
 .testimony-description {
   text-align: initial;
 }
 
-.form {
-  display: grid;
-  row-gap: 1rem;
-}
-
-.wrap {
-  color: var(--color-primary);
-  display: grid;
-  grid-auto-flow: row;
-  padding: 2.4rem clamp(2rem, 6vw, 90rem);
-}
-
 .access {
   background-color: var(--color-access);
+  color: var(--color-primary);
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.form-access {
+  width: 82%;
+  margin: 0 auto;
+}
+
+.submit-access {
+  font-size: 1rem;
 }
 
 .footer {
   background-color: var(--color-footer);
+  color: var(--color-primary);
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   row-gap: 3rem;
 }
 
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact h3 {
+  margin-left: 1.5rem;
+}
+
+.footer-contact h3 {
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.footer-contact figure{
+  padding-bottom: 3rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social a {
+  margin-right: 1rem;
+  font-size: 24px;
+}
