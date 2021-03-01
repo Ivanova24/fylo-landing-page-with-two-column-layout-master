@@ -92,17 +92,23 @@ p {
 
 .submit {
   padding: 1rem;
-  font-size: 1.16rem;
+  font-size: large;
   border-radius: 7px;
 }
 
 .btn {
   color: var(--color-primary);
   background-color: var(--color-btn);
-  border-color: var(--color-btn);
+  box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 25%);
+  border:none;
   font-family: 'Raleway';
   font-weight: 700;
-  box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 25%);
+  cursor: pointer; 
+  transition: all 0.5s ease-out;
+}
+
+.btn:hover {
+  background-color: var(--color-links);
 }
 
 /* ***site styles*** */
@@ -112,8 +118,7 @@ p {
 
 .wrap {
   display: grid;
-  /* grid-auto-flow: row; */
-  padding: 2.4rem clamp(2rem, 6vw, 90rem);
+  padding: 5rem clamp(2rem, 6vw, 90rem);
 }
 
 .header {
@@ -141,7 +146,6 @@ p {
 } 
 
 .description {
-  margin: 2rem 0;
   text-align: center;
 }
 
@@ -159,16 +163,35 @@ p {
   font-family: var(--font-headings);
 }
 
+/* Section testimony */
+.testimony {
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 610px));
+  justify-content: space-between;
+  background-color: var(--color-bg);
+row-gap: 5rem;
+}
+
 .testimony-description {
   text-align: initial;
 }
 
+/* section access */
 .access {
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 610px));
+  justify-content: space-between;
   background-color: var(--color-access);
   color: var(--color-primary);
-  padding-top: 3rem;
-  padding-bottom: 5rem;
+  row-gap: 2rem; 
+}
+
+.access-description {
+  display: grid;
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.access-description p {
+  font-size: 1.20rem;
 }
 
 .form-access {
@@ -176,10 +199,7 @@ p {
   margin: 0 auto;
 }
 
-.submit-access {
-  font-size: 1rem;
-}
-
+/* Sección footer */
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -188,8 +208,6 @@ p {
 
 .footer {
   background-color: var(--color-footer);
-  padding-top: 5rem;
-  padding-bottom: 3rem;
   row-gap: 3rem;
 }
 
@@ -235,4 +253,36 @@ p {
     justify-content: flex-start;
     align-items: flex-start;
   }
+
+  .access-description {
+    text-align: left;
 }
+
+.form-access{
+  width: 100%;
+  margin: 0;
+  row-gap: 2rem;
+}
+
+.submit-access {
+  width: 40%;
+}
+
+.input {
+  width: 85%;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .access-description  p{
+    font-size: 1.25rem;
+}
+
+.headings {
+  font-size: 2rem;
+}
+
+}
+
+
+
