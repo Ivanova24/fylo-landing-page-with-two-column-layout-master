@@ -146,17 +146,14 @@ p {
 } 
 
 .description {
+  display: grid;
+  row-gap: 2rem;
   text-align: center;
 }
 
 .description h1 {
   font-size: 1.8rem;
   line-height: 1.6;
-}
-
-.description p {
-  margin: 2rem 0;
-  font-size: 1.16rem;
 }
 
 .headings {
@@ -167,12 +164,61 @@ p {
 .testimony {
   grid-template-columns: repeat(auto-fit, minmax(min-content, 610px));
   justify-content: space-between;
-  background-color: var(--color-bg);
-row-gap: 5rem;
+  background-color: var(--color-primary);
+  row-gap: 5rem;
 }
 
 .testimony-description {
   text-align: initial;
+  font-size: 1.20rem;
+}
+
+.testimony-link {
+  border-bottom: thin solid var(--color-links);
+  padding-bottom: 0.5rem;
+  font-size: 1.20rem;
+  width: 45%;
+  margin: 0 auto;
+}
+
+.testimony-link a:hover {
+  font-size: 1.35rem;
+  font-weight: 700;
+  transition: all 0.5s ease-out;
+}
+
+.testimony-link a {
+  text-decoration: none;
+  color: var(--color-links); 
+}
+
+.description aside {
+  display: grid;
+  row-gap: 1rem;
+  width: 82%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 25%);
+  margin-top: 2rem;
+  font-family: 'Open Sans'
+
+}
+
+.testimony-avatar {
+  display: flex;
+  text-align: start;
+  align-items: center;
+}
+
+.testimony-avatar img {
+  border-radius: 50%;
+  width: 17%;
+  margin-right: 1rem;
+}
+
+.aside img {
+  width: 6%;
 }
 
 /* section access */
@@ -180,7 +226,7 @@ row-gap: 5rem;
   grid-template-columns: repeat(auto-fit, minmax(min-content, 610px));
   justify-content: space-between;
   background-color: var(--color-access);
-  color: var(--color-primary);
+  color: white;
   row-gap: 2rem; 
 }
 
