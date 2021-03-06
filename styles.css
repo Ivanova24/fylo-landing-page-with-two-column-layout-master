@@ -151,6 +151,26 @@ p {
   font-size: 1.16rem;
 } 
 
+.size-paragraph {
+  font-size: clamp(1rem, 1.33vw, 2rem);
+}
+
+.size-paragraph-testimony {
+  font-size: clamp(0.85rem, 1.15vw, 1.80rem);
+}
+
+.size-name-testimony {
+  font-size: clamp(1rem, 1.1vw, 1.30rem);
+}
+
+.size-profession-testimony {
+  font-size: clamp(0.7rem, 0.9vw, 1.10rem);
+}
+
+.size-form {
+  font-size: clamp(0.9rem, 1.15vw, 1.8rem);
+}
+
 .description {
   display: grid;
   row-gap: 2rem;
@@ -174,7 +194,6 @@ p {
 
 .testimony-description {
   text-align: initial;
-  font-size: 1.20rem;
 }
 
 .testimony-link {
@@ -221,7 +240,6 @@ p {
 
 .aside p {
   text-align: initial;
-  font-size: 1.10rem;
 }
 
 .aside img {
@@ -271,6 +289,7 @@ p {
 .footer-link {
   text-decoration: none;
   color: white;
+  font-size: clamp(0.95rem, 1.25vw, 1.85rem);
 }
 
 .footer-link:hover {
@@ -301,17 +320,9 @@ p {
   .form-access {
     width: 60%;
   }
-
- 
-
 }
-
 
 @media screen and (min-width: 1024px) {
-  .access-description  p{
-    font-size: 1.10rem;
-}
-
 .headings {
   font-size: 2rem;
 }
